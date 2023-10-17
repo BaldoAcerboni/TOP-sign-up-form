@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <title>TOP Sign Up Form</title>
+</head>
+<body>
+  <main>
+    <div id="img-container"></div>
+    <form action="#" id="form">
+      <h2>Sign up now, so that we can help you achieve your dreams.</h2>
+      <ul>
+        <li>
+          <label for="username">Name:(4 to 20 characters)</label>
+          <input type="text" name="username" id="username" minlength="4" maxlength="20" required>
+        </li>
+        <li>
+          <label for="useremail">Email:</label>
+          <input type="email" name="useremail" id="useremail" required>
+        </li>
+        <li>
+          <label for="pwd">Password:(5 to 15 characters)</label>
+          <input type="password" name="password" id="pwd" minlength="5" maxlength="15" 
+          pattern="^[a-zA-Z0-9]{5,15}$" required>
+        </li>
+        <li>
+          <label for="pwd-confirm">Confirm Password:</label>
+          <input type="password" id="pwd-confirm" required>
+        </li>
+        <button type="submit">Submit</button>
+      </ul>
+    </form>
+  </main>
+</body>
+</html>
