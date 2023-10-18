@@ -7,12 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <script src="./script.js" defer></script>
   <title>TOP Sign Up Form</title>
 </head>
 <body>
   <main>
-    <div id="img-container"></div>
+    <div id="img-container">
+      <img src="./images/dream.avif" alt="dreamy image" class="background">
+      <div class="logo-container">
+        <img src="./images/odin-lined.png" alt="the odin project logo" class="odin-logo">
+        <h1>The Odin Project</h1>
+      </div>
+      <div class="img-author">
+        <p>Photo by <a href="https://unsplash.com/@wzimmermann">Wolf Zimmermann</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      </div>
+    </div>
     <form action="#" id="form">
       <h2>Sign up now, so that we can help you achieve your dreams.</h2>
       <ul>
@@ -26,8 +36,8 @@
         </li>
         <li>
           <label for="pwd">Password:(5 to 15 characters)</label>
-          <input type="password" name="password" id="pwd" minlength="5" maxlength="15" 
-          pattern="^[a-zA-Z0-9]{5,15}$" required>
+          <span id="pwd-security"></span>
+          <input type="password" name="password" id="pwd" autocomplete="new-password" minlength="5" maxlength="15" required>
         </li>
         <li>
           <label for="pwd-confirm">Confirm Password:</label>
