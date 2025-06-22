@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOP Sign up form</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="image-container">
+      <img src="./images/dream.avif" alt="cloud image" class="cloud-img">
+      <div class="logo-container">
+        <img src="./images/odin-logo.svg" alt="odin logo">
+        <h1>The Odin Project</h1>
+      </div>
+
+      <div class="img-author">
+        <p>Photo by <a href="https://unsplash.com/@wzimmermann">Wolf Zimmermann</a> on <a
+            href="https://unsplash.com/">Unsplash</a></p>
+      </div>
+
+    </div>
+
+
+    <form action="./staminchia" method="get">
+
+      <div class="form-header">
+        <h2>Not a real online service.</h2>
+        <p>You know you need something like this in your life to helo realize your deepest dreams.</p>
+        <p>You <em>know</em>you want to.</p>
+        <p>Sign up <em>now</em> to get started</p>
+      </div>
+
+      <div class="form-section">
+        <label for="name">Name:
+          <input type="text" id="name" name="name" minlength="3" maxlength="20" required></label>
+        <label for="surname">Surname:
+          <input type="text" id="surname" name="surname" minlength="3" maxlength="20" required></label>
+      </div>
+
+      <div class="form-section">
+        <label for="email">Email:
+          <input type="email" id="email" name="email" required></label>
+        <label for="phone">Phone number:
+          <input type="tel" id="phone" name="phone" minlength="10" maxlength="12" required></label>
+      </div>
+
+      <span class="pwd-tips"></span>
+      <div class="form-section">
+
+        <label for="pwd">Enter Password:
+          <input type="password" id="pwd" name="pwd" minlength="8" maxlength="16" required>
+          <img src="./images/visibility_off.svg" class="invisible" id="show-pwd">
+        </label>
+
+        <label for="pwd-confirm">Confirm Password:
+          <input type="password" id="pwd-confirm" name="pwd-confirm" minlength="8" maxlength="16" required>
+          <img src="./images/visibility_off.svg" class="invisible" id="show-pwd-confirm">
+        </label>
+      </div>
+
+      <div class="form-section">
+        <button class="submit-btn">Submit</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
